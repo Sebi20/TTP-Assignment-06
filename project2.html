@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 6: Project 2</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+<body>
+<form id = "cityform">
+    <label for="cityInput">Enter city:</label>
+    <input type="text" name="cityInput">
+    <input type="submit" name="submit" value="SUBMIT">
+</form>
+	<div id="root"></div>
+	<script type="text/babel">
+        function ZipText(data){
+
+            const zips = data.map((element)=><li>{element}</li>)     
+            return (<ul>{zips}</ul>)
+    }
+    let root = document.getElementById("root")
+    let cityform = document.getElementById("cityform")
+    cityform.addEventListener('submit',(event)=>{
+        fetchCityData(cityform.cityInput.value.toUpperCase())
+        cityform.cityInput.value = ""
+        event.preventDefault()
+    })
+    function fetchCityData(city){
+    fetch(`http://ctp-zip-api.herokuapp.com/city/${city}`)
+    .then(response => response.json())
+    .then(data=>{  
+            ReactDOM.render(<div><h1>All zip codes associated with {city}: </h1>{ZipText(data)}</div>,root)    
+    })
+}
+	</script>
+</body>
+</html>
+   

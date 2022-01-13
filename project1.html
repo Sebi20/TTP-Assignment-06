@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 6: Project 1</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+<body>
+<form id = "zipform">
+    <label for="zipcodeInput">Enter zipcode:</label>
+    <input type="text" name="zipcodeInput">
+    <input type="submit" name="submit" value="SUBMIT">
+</form>
+	<div id="root"></div>
+	<script type="text/babel">
+        function CityText(data){
+        return(
+            data.map((element)=>
+            <div>
+                <h1>{element.LocationText}</h1>
+                <ul>
+                    <li>State: {element.State}</li>
+                    <li>Location: (Latitude: {element.Lat}, Longitude: {element.Long})</li>
+                    <li>Population (estimated): {element.EstimatedPopulation}</li>
+                    <li>Total Wages: ${element.TotalWages}</li>
+                </ul>
+            </div>
+             ))
+    }
+    let root = document.getElementById("root")
+    let zipform = document.getElementById("zipform")
+    zipform.addEventListener('submit',(event)=>{
+        fetchZipData(zipform.zipcodeInput.value)
+        zipform.zipcodeInput.value = ""
+        event.preventDefault()
+    })
+    function fetchZipData(zip){
+    fetch(`http://ctp-zip-api.herokuapp.com/zip/${zip}`)
+    .then(response => response.json())
+    .then(data=>{  
+            ReactDOM.render(<div>{CityText(data)}</div>,root)    
+    })
+}
+	</script>
+</body>
+</html>
+   
