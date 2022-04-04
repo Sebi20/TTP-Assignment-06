@@ -1,0 +1,51 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+1 info using npm@8.1.2
+2 info using node@v16.13.2
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/Users/tiegoouedraogo/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 1ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 9ms
+18 timing npm:load:configload Completed in 9ms
+19 timing npm:load:setTitle Completed in 17ms
+20 timing npm:load:setupLog Completed in 0ms
+21 timing config:load:flatten Completed in 3ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 2ms
+25 timing npm:load Completed in 34ms
+26 timing command:run-script Completed in 9ms
+27 timing command:start Completed in 14ms
+28 verbose stack Error: Missing script: "start"
+28 verbose stack
+28 verbose stack Did you mean one of these?
+28 verbose stack     npm star # Mark your favorite packages
+28 verbose stack     npm stars # View packages marked as favorites
+28 verbose stack
+28 verbose stack To see a list of scripts, run:
+28 verbose stack   npm run
+28 verbose stack     at RunScript.run (/usr/local/lib/node_modules/npm/lib/run-script.js:105:13)
+29 verbose cwd /Users/tiegoouedraogo/Desktop/TTP_Residence/TTP/FullStack/Fullstack-CRUD-Application-Frontend
+30 verbose Darwin 21.2.0
+31 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+32 verbose node v16.13.2
+33 verbose npm  v8.1.2
+34 error Missing script: "start"
+34 error
+34 error Did you mean one of these?
+34 error     npm star # Mark your favorite packages
+34 error     npm stars # View packages marked as favorites
+34 error
+34 error To see a list of scripts, run:
+34 error   npm run
+35 verbose exit 1

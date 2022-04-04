@@ -1,0 +1,272 @@
+2022-01-18 22:32:17,714: WARNING	werkzeug:	WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-18 22:32:17,714: WARNING	werkzeug:	WebSocket transport not available. Install simple-websocket for improved performance.
+2022-01-18 22:34:08,060: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2022-01-18 22:42:19,688: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6596654):
+Error Message:ERROR:  relation "customers" already exists
+SQL state: 42P07
+2022-01-18 22:49:45,804: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 4565391):
+Error Message:ERROR:  column "id" does not exist
+LINE 1: SELECT id,company. from customers;
+               ^
+SQL state: 42703
+Character: 8
+2022-01-18 23:19:17,687: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 3543553):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: Select c.first_name , c.last_name from customers as “c”;
+               ^
+SQL state: 42P01
+Character: 79
+2022-01-18 23:19:39,400: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 4247805):
+Error Message:ERROR:  syntax error at or near "."
+LINE 2: Select c.id c.first_name , c.last_name from customers as “c”...
+                     ^
+SQL state: 42601
+Character: 85
+2022-01-18 23:20:08,296: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6668349):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: select c.id , c.first_name , c.last_name from customers as “...
+               ^
+SQL state: 42P01
+Character: 79
+2022-01-18 23:20:14,651: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6499963):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: select c.id , c.first_name , c.last_name from customers as “...
+               ^
+SQL state: 42P01
+Character: 9
+2022-01-18 23:20:59,050: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 3022364):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: select c.ID , c.first_name , c.last_name from customers as “...
+               ^
+SQL state: 42P01
+Character: 9
+2022-01-18 23:21:11,897: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 3442187):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: select c.ID , c.first_name from customers as “c”;
+               ^
+SQL state: 42P01
+Character: 9
+2022-01-18 23:21:34,684: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1940111):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: select c.ID , c.first_name FROM customers as “c”;
+               ^
+SQL state: 42P01
+Character: 9
+2022-01-18 23:21:44,192: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 8200845):
+Error Message:ERROR:  missing FROM-clause entry for table "c"
+LINE 2: SELECT c.ID , c.first_name FROM customers as “c”;
+               ^
+SQL state: 42P01
+Character: 9
+2022-01-18 23:23:28,602: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1271323):
+Error Message:ERROR: can't execute an empty query
+
+
+2022-01-18 23:26:15,273: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 2473683):
+Error Message:ERROR:  relation "orders_details" does not exist
+LINE 2: select orders_id quantity from orders_details;
+                                       ^
+SQL state: 42P01
+Character: 81
+2022-01-18 23:27:20,083: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 5987756):
+Error Message:ERROR:  relation "orderdetails" does not exist
+LINE 2: Select order_id,quantity from orderdetails;
+                                      ^
+SQL state: 42P01
+Character: 80
+2022-01-18 23:27:49,183: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1002516):
+Error Message:ERROR:  syntax error at or near "select"
+LINE 2: select c.ID, c.first_name from customers as "c";
+        ^
+SQL state: 42601
+Character: 74
+2022-01-18 23:28:08,383: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 5350777):
+Error Message:ERROR:  syntax error at or near "Select"
+LINE 2: Select c.ID, c.first_name from customers as "c";
+        ^
+SQL state: 42601
+Character: 74
+2022-01-18 23:33:20,830: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 2184641):
+Error Message:ERROR:  syntax error at or near "from"
+LINE 8: from  order_details;
+        ^
+SQL state: 42601
+Character: 282
+2022-01-18 23:33:31,994: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 8796148):
+Error Message:ERROR:  syntax error at or near "From"
+LINE 8: From order_details;
+        ^
+SQL state: 42601
+Character: 282
+2022-01-18 23:33:41,617: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6822013):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8: FROM order_details;
+        ^
+SQL state: 42601
+Character: 282
+2022-01-18 23:33:59,569: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1048578):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8: FROM order_details;
+        ^
+SQL state: 42601
+Character: 286
+2022-01-18 23:34:32,869: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 8051833):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8: FROM order_details;
+        ^
+SQL state: 42601
+Character: 286
+2022-01-18 23:34:35,487: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 5769254):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8: FROM order_details;
+        ^
+SQL state: 42601
+Character: 286
+2022-01-18 23:34:56,216: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 4280936):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8: FROM order_details;
+        ^
+SQL state: 42601
+Character: 285
+2022-01-18 23:35:16,032: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 9695393):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8:         FROM order_details;
+                ^
+SQL state: 42601
+Character: 293
+2022-01-18 23:35:16,952: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 2045384):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 8:         FROM order_details;
+                ^
+SQL state: 42601
+Character: 293
+2022-01-18 23:36:29,545: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 7797274):
+Error Message:ERROR:  syntax error at or near "From"
+LINE 7: From order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:39,801: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1352869):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:40,629: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 5293572):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:54,757: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1584237):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:55,827: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 7625571):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:56,460: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6017033):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:57,053: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 4871037):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:57,556: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 9394578):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:36:58,396: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6814307):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:37:02,387: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 5782774):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM order_detail;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:37:59,237: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 6263783):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM ORDER_DETAILS;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:38:00,770: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7747725(Query-id: 1644004):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 7: FROM ORDER_DETAILS;
+        ^
+SQL state: 42601
+Character: 249
+2022-01-18 23:38:56,553: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 1083, in send_static_file
+    return send_from_directory(
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 767, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2022-01-18 23:41:37,421: ERROR	pgadmin:	404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 1083, in send_static_file
+    return send_from_directory(
+  File "/Library/PostgreSQL/14/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/helpers.py", line 767, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2022-01-18 23:44:24,780: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4495142(Query-id: 3832200):
+Error Message:ERROR:  syntax error at or near "FROM"
+LINE 3: FROM ORDER_DETAILS;
+        ^
+SQL state: 42601
+Character: 38
+2022-01-18 23:47:59,296: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4495142(Query-id: 9595452):
+Error Message:ERROR:  column "order_quantity" does not exist
+LINE 8:    order_quantity
+           ^
+SQL state: 42703
+Character: 289
+2022-01-18 23:48:11,634: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4495142(Query-id: 2085070):
+Error Message:ERROR:  column "order_quantities" does not exist
+LINE 8:    order_quantities
+           ^
+SQL state: 42703
+Character: 289
+2022-01-18 23:50:32,934: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4495142(Query-id: 4974038):
+Error Message:ERROR:  syntax error at or near "as"
+LINE 9:    .2% as "Commission"
+               ^
+SQL state: 42601
+Character: 341

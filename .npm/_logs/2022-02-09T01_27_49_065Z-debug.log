@@ -1,0 +1,66 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i', 'react-boostrap' ]
+1 info using npm@8.1.2
+2 info using node@v16.13.2
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/tiegoouedraogo/Desktop/Scrimba/React/learningreact/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/tiegoouedraogo/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 6ms
+19 timing npm:load:configload Completed in 6ms
+20 timing npm:load:setTitle Completed in 17ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:cleanupLog Completed in 2ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 0ms
+26 timing npm:load Completed in 29ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 643ms
+29 timing idealTree:userRequests Completed in 2ms
+30 silly idealTree buildDeps
+31 silly fetch manifest react-boostrap@*
+32 timing arborist:ctor Completed in 0ms
+33 http fetch GET 404 https://registry.npmjs.org/react-boostrap 1032ms (cache skip)
+34 http fetch GET 404 https://registry.npmjs.org/react-boostrap 500ms (cache skip)
+35 silly placeDep ROOT react-boostrap@ OK for: learningreact@0.1.0 want: *
+36 timing idealTree:#root Completed in 1544ms
+37 timing idealTree:node_modules/react-boostrap Completed in 0ms
+38 timing idealTree:buildDeps Completed in 1544ms
+39 timing idealTree:fixDepFlags Completed in 15ms
+40 timing idealTree Completed in 2205ms
+41 timing command:install Completed in 2221ms
+42 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/react-boostrap - Not found
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-fetch/check-response.js:95:15
+42 verbose stack     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+42 verbose stack     at async Arborist.[nodeFromEdge] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1061:19)
+42 verbose stack     at async Arborist.[buildDepStep] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:930:11)
+42 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:216:7)
+42 verbose stack     at async Promise.all (index 1)
+42 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:149:5)
+42 verbose stack     at async Install.install (/usr/local/lib/node_modules/npm/lib/install.js:170:5)
+43 verbose statusCode 404
+44 verbose pkgid react-boostrap@*
+45 verbose cwd /Users/tiegoouedraogo/Desktop/Scrimba/React/learningreact
+46 verbose Darwin 21.2.0
+47 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "react-boostrap"
+48 verbose node v16.13.2
+49 verbose npm  v8.1.2
+50 error code E404
+51 error 404 Not Found - GET https://registry.npmjs.org/react-boostrap - Not found
+52 error 404
+53 error 404 'react-boostrap@*' is not in this registry.
+54 error 404 You should bug the author to publish it (or use the name yourself!)
+55 error 404 Note that you can also install from a
+56 error 404 tarball, folder, http url, or git url.
+57 verbose exit 1
